@@ -28,6 +28,8 @@ prompt.get([{
     required: true
   }
 ], function (err, result) {
+  if (err) return console.error(err);
+  
   var a = result.a, b = result.b, c = result.c;
 
   if (!isATriangle(a,b,c)) return console.log('Not a triangle');
