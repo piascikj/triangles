@@ -1,8 +1,5 @@
 const prompt = require('prompt');
 
-prompt.message = 'Segment'
-prompt.start();
-
 function isATriangle(a,b,c) {
   return (a+b>c) && (a+c>b) && (b+c>a);
 }
@@ -15,6 +12,8 @@ function isIsosceles(a,b,c) {
   return (a == b) || (a == c) || (b == c);
 }
 
+prompt.message = 'Segment'
+prompt.start();
 prompt.get([{
     name: 'a',
     type: 'number',
@@ -29,10 +28,8 @@ prompt.get([{
     required: true
   }
 ], function (err, result) {
-  //
-  // Log the results.
-  //
   var a = result.a, b = result.b, c = result.c;
+
   if (!isATriangle(a,b,c)) return console.log('Not a triangle');
   if (isEquilateral(a,b,c)) return console.log('Equilateral');
   if (isIsosceles(a,b,c)) return console.log('Isosceles');
