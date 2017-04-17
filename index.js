@@ -5,7 +5,7 @@ function isATriangle(a,b,c) {
 }
 
 function isEquilateral(a,b,c) {
-  return a == b == c;
+  return a == b && a == c;
 }
 
 function isIsosceles(a,b,c) {
@@ -29,7 +29,7 @@ prompt.get([{
   }
 ], function (err, result) {
   if (err) return console.error(err);
-  
+
   var a = result.a, b = result.b, c = result.c;
 
   if (!isATriangle(a,b,c)) return console.log('Not a triangle');
