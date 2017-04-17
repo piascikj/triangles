@@ -1,0 +1,22 @@
+{
+  "name": "triangles",
+  "version": "1.0.0",
+  "description": "Triangle Classification CLI",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piascikj/triangles.git"
+  },
+  "author": "Jesse Piascik",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/piascikj/triangles/issues"
+  },
+  "homepage": "https://github.com/piascikj/triangles#readme",
+  "dependencies": {
+    "prompt": "^1.0.0"
+  }
+}
